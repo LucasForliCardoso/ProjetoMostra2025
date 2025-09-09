@@ -47,7 +47,7 @@ nav ul li a:hover{
 
 main {
     background-color: #092e6e;
-    padding: 40px 20px;
+    padding: 140px 20px 40px;
     text-align: center;
     color: white;
 }
@@ -124,24 +124,19 @@ main {
     color: #ffcc00;
 }
 
-/* Cada bloco de dev será flexível */
+
 .dev-section {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 40px 0;
     gap: 20px;
-    height:100vh;
+    height: auto; /* melhor que 100vh */
     width: 100%;
 }
 
-/* Alterna para inverter imagem/texto */
 .dev-esquerda {
     flex-direction: row;
-}
-
-.dev-direita {
-    flex-direction: row-reverse;
 }
 
 .dev-section img {
@@ -150,16 +145,49 @@ main {
     border-radius: 50%; /* círculo */
 }
 
-.dev-section h1 {
+.dev-content {
     flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* centraliza nome, texto e ícones */
     text-align: center;
-    font-size: 25px;
 }
 
-.dev-section p {
-    flex: 1;
-    text-align: center;
-    font-size: 25px;
+.dev-content h1 {
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+.dev-content p {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+/*Icones de redes sociais*/
+.social-icons {
+    display: flex;
+    gap: 15px;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.2s ease;
+}
+
+.social-icons img:hover {
+    transform: scale(1.2);
+}
+
+.social-icons i { 
+    font-size: 35px;  
+    color: white;   
+    transition: transform 0.2s ease;
+}
+
+.social-icons i:hover {
+    transform: scale(1.2);
+    color: #00bfff;
 }
 
 /* Sobre a empresa */
@@ -248,12 +276,53 @@ main {
 
 /* Rodapé */
 footer {
-    background-color: #092e6e;
-    padding: 20px;
-    text-align: center;
+  background: #092e6e;
+  color: #fff;
+  padding: 50px 20px 20px;
+  text-align: center;
 }
 
-footer img {
-    width: 40px;
-    margin: 0 10px;
+.footer-container {
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 30px;
+}
+
+.footer-links h3,
+.footer-social h3 {
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-links ul li {
+  margin-bottom: 8px;
+}
+
+.footer-links ul li a:hover {
+  color: #00bfff;
+}
+
+.footer-social a {
+  font-size: 50px;
+  margin-right: 10px;
+  transition: 0.3s;
+  color: #fff;
+}
+
+.footer-social a:hover {
+  color: #00bfff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1.5rem;
+  padding-top: 15px;
 }
