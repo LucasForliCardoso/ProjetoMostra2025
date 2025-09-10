@@ -260,7 +260,7 @@ footer {
 }
 
 /* Responsivo */
-@media (max-width: 768px) {
+@media (max-width: 900px) {
     .video-container {
         height: 40vh;
     }
@@ -271,16 +271,9 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
-    .filme-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Sinopse-img img {
-        width: 80%; 
-        height: auto; 
 }
 
+@media (max-width: 800px) {
     .sinopse-content {
         flex-direction: column;
         align-items: center;
@@ -289,7 +282,7 @@ footer {
     .sinopse-content img {
         width: 160px;
     }
-
+}
 
 .overlay p{
     color: white;
@@ -347,4 +340,15 @@ footer {
   color: #333;
   text-align: justify;
 }
+
+@media (max-width: 900px) {
+    .filme-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Sinopse-img img {
+        width: 80%; 
+        height: auto; 
+    }
 }

@@ -105,10 +105,7 @@ main {
 }
 
 .btn-dev{
-    font-size: 20px;
-    color: #092e6e;
-    top: 10px;
-    right: 160px;
+    font-size: 0%;
 }
 
 .logo img{
