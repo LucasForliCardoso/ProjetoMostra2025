@@ -185,9 +185,34 @@ nav ul li a:hover{
     margin: 0;
 }
 
-.overlay p{
-    color: white;
-    font-size: 20px;
+.sinopse {
+    background: #fff;
+    padding: 48px 0;
+    margin: 0 auto 32px auto;
+    min-height: 220px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sinopse .container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 24px;
+}
+
+.sinopse h2 {
+    color: #092e6e;
+    font-size: 2rem;
+    margin-bottom: 18px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.sinopse p {
+    color: #333;
+    font-size: 1.15rem;
+    line-height: 1.7;
+    font-family: 'Montserrat', sans-serif;
 }
 
 footer {
@@ -235,7 +260,7 @@ footer {
 }
 
 /* Responsivo */
-@media (max-width: 900px) {
+@media (max-width: 768px) {
     .video-container {
         height: 40vh;
     }
@@ -246,6 +271,32 @@ footer {
         flex-direction: column;
         gap: 12px;
     }
+    .filme-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .Sinopse-img img {
+        width: 80%; 
+        height: auto; 
+}
+
+    .sinopse-content {
+        flex-direction: column;
+        align-items: center;
+        gap: 18px;
+    }
+    .sinopse-content img {
+        width: 160px;
+    }
+
+
+.overlay p{
+    color: white;
+}
+
+.main{
+    flex: 1;
 }
 
 .detalhes {
@@ -296,15 +347,4 @@ footer {
   color: #333;
   text-align: justify;
 }
-
-@media (max-width: 900px) {
-    .filme-content {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .Sinopse-img img {
-        width: 80%; 
-        height: auto; 
-    }
 }
